@@ -1,0 +1,73 @@
+var gems = {
+    azul {
+        name: "blue",
+        value: 0
+    },
+    rojo {
+        name: "red",
+        value: 0
+    },
+    amarillo {
+        name: "yellow",
+        value: 0
+    },
+    verde {
+        name: "green",
+        value: 0
+    }
+};
+
+var yourScore = 0;
+var targetScore = 0;
+var wins = 0;
+var losses = 0;
+
+var randomNumber = function (min, max) {
+    var randomNums = Math.floor(Math.random * (max - min) + min);
+    var startGame = function () {
+        yourScore = 0;
+        targetScore = randomNumber (19, 120)
+        gems.azul.value(1, 12);
+        gems.rojo.value(1, 12);
+        gems.amarillo.value(1, 12);
+        gems.verde.value(1, 12);
+        $("#targetScore").html(targetScore);
+
+        console.log(azul);
+        console.log(rojo);
+        console.log(amarillo);
+        console.log(verde);
+    }
+}
+
+var gameReset = function () {
+if (yourScore > targetScore) {
+    alert("Loser!");
+    losses++;
+    startGame();
+} else if (yourScore === targetScore) {
+    alert("Winner!");
+    wins++
+    startGame();
+ }
+}
+
+$("#blue").on("click", function) {
+
+}
+
+$("#red").on("click", function) {
+
+}
+
+$("#yellow").on("click", function) {
+
+}
+
+$("#green").on("click", function) {
+
+}
+
+
+startGame();
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Gem Game</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="./assets/css/reset.css">
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+          <div class="jumbotron jumbotron-fluid alert alert-warning text-gray">
+            <div class="container">
+              <h1 class="display-4 text-center"><strong>Welcome to Gem Magic</strong></h1>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-heading alert alert-primary">
+                  <h3 class="card-title">Instructions</h3>
+                </div>
+                <div class="card-body">
+                    <p>Please note the number to the side of the instructions. This is your target number.
+                    Below you will see three magic gems. Clicking on a gem will add points your total score.
+                    You can win Gem Magic by matching your total score to the target number. The value of 
+                    each gem is hidden until clicked upon. Choose wisely, and victory is yours. Choose 
+                    poorly, however, then its NO GEMS FOR YOU!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+          <div class="row top-buffer">
+            <div class="col-lg-3">
+              <div class="card text-center">
+                <div class="card-heading alert alert-primary">
+                   <h3 class="card-title">Target Score</h3>
+              </div>
+              <div class="card-body" id="targetScore">
+                <h3>53</h3>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card text-center">
+                  <div class="card-heading alert alert-primary">
+                     <h3 class="card-title">Gem Choice</h3>
+                </div>
+                <div class="card-body">
+                  <img src="assets/images/gem-blue.jpg" alt="" id="blue">
+                  <img src="assets/images/gem-red.jpg" alt="" id="red">
+                  <img src="assets/images/gem-yellow.jpeg" alt="" id="yellow">
+                  <img src="assets/images/gem-green.jpeg" alt="" id="green">
+                </div>
+                </div>
+              </div>
+
+            <div class="col-lg-3">
+                <div class="card text-center">
+                  <div class="card-heading alert alert-primary">
+                     <h3 class="card-title">Your Score</h3>
+                </div>
+                <div class="card-body" id="yourScore">
+                  <h3>0</h3>
+                </div>
+                </div>
+              </div>
+
+
+            
+          </div>
+
+          <div class="row top-buffer">
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-heading alert alert-primary">
+                       <h3 class="card-title">Win Count</h3>
+                  </div>
+                  <div class="card-body" id="winner">
+                    <p>0</p>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-heading alert alert-primary">
+                       <h3 class="card-title">Loss Count</h3>
+                  </div>
+                  <div class="card-body" id="loser">
+                    <p>0</p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./assets/javascript/tester.js"></script>
+        
+        
+        </body>
+    </html>

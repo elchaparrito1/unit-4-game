@@ -1,0 +1,16 @@
+
+body {
+    padding: 10px;
+}
+img {
+    /* float: left; */
+    height: 100px;
+    margin: 20px;
+    width: 100px;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+
